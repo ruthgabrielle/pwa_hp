@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harry Potter</title>
+    <link href="manifest.json" rel="manifest">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+
+    <!-- iOS meta tags and icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Harry Potter">
+
+    <meta name="description" content="Harry Potter">
+    <meta name="theme-color" content="#694a84" />
+
+</head>
+
+<body>
+
+    <header class="container-fluid fixed-top">
+        <img src="images/Silhueta-Harry-Potter-PNG.png" class="logo">
+
+        <nav class="navbar navbar-expand-lg navbar-light float-end no-transition">
+            <div class="container-fluid">
+                <img src="images/me.jpg" class="profile">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Minhas wizards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Meu perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sair</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="container">
+
+        <!--Container que lista as characteres cadastradas-->
+
+        <section id="characteres">
+
+            <div class="row">
+
+            </div>
+
+        </section>
+
+        <section id="wizards">
+            <div class="row fixed-top">
+
+                <div class="col-12">
+                    <div class="characteres_toolbar">
+                        <button type="button" id="btnVoltar" onclick="javascript:voltarTela();" class="btn btn-light">
+                            <img src="images/arrow-back.png" class="back">
+                        </button>
+                        <span id="title">Nome</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row" id="wizards_content">
+
+            </div>
+
+        </section>
+
+        <!--Modal-->
+
+        <div class="modal fade" id="modalWizard" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="name_wizard">Nome</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><span id="house_wizard"><strong>Casa:</strong></span></p>
+                        <p><span id="patronus_wizard"><strong>Patrono:</strong></span></p>
+                        <p><span id="wand_wizard"><strong>Núcleo da Varinha:</strong>Não possui</span></p>
+                        <p><span id="ancestry_wizard"><strong>Ancestrais:</strong> </span></p>
+                        <p><span id="actor_wizard"><strong>Ator:</strong></span></p>
+                        <p><span id="wizard_alive"><strong>Vivo:</strong></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="container-fluid fixed-bottom">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-warning">Fav wizards</button>
+            <button type="button" class="btn btn-warning">My wizards</button>
+            <button type="button" class="btn btn-danger">Instalar App</button>
+        </div>
+    </footer>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
